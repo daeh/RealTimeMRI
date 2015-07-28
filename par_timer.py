@@ -4,6 +4,7 @@ from os.path import join
 from os.path import exists
 from time import time
 from operator import sub
+from time import sleep
 
 total = 10 # number of dumps to measure
 
@@ -31,6 +32,7 @@ while (j+i) < (total*2):
 		# print file_path_new
 		print t_diff
 		j += 1
+	sleep(0.05)
 		
 
 #times_diff = map(sub, times_new, times_org)
